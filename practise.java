@@ -1,10 +1,13 @@
 import java.util.Scanner;
+
 public class practise {
     public static void main(String[] args) {
-        int a;
-        Scanner b = new Scanner(System.in);
-        int c = b.nextInt();
-        System.out.println(c);
+        Scanner a = new Scanner(System.in);
 
+        System.out.println("enter your number :");
+        float b = a.nextFloat();
+        System.out.println(b);
+        
     }
+    
 }
