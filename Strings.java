@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Strings {
     public static void main(String[] args) {
-        String a = "Namit";
+        // String a = "Ram bhagwan ki jay ";
     //     Scanner  a = new Scanner(System.in);
 
     //     String b = a.nextLine();
@@ -23,8 +23,10 @@ public class Strings {
 
     // System.out.println(a.charAt(3 ));
 
-    System.out.println(a.indexOf("Namit"));
-
+    // System.out.println(a.indexOf("Namit"));
+    // System.out.println(a.indexOf("x",5));
+    String a = "Harryrryrry";
+    System.out.println(a.lastIndexOf("rry",8));
 
     }
 }
