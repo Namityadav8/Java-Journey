@@ -15,6 +15,12 @@ public class practise {
         // int b = 1;
         // int k = a*b/2;
         // System.out.println(k);
+        Scanner a = new Scanner(System.in);
+        int [] b = new int[5];
+        for(int i=0;i<5;i++){
+            
+        }
+        
     }
     
 }
