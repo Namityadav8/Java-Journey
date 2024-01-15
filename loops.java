@@ -7,6 +7,7 @@ public class loops {
         System.out.println("namit is horny as fuck ");
         System.out.println("hi bitch");
     }
+    
        }
     }
 
