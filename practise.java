@@ -18,8 +18,11 @@ public class practise {
         Scanner a = new Scanner(System.in);
         int [] b = new int[5];
         for(int i=0;i<5;i++){
-            
+            b[i] = a.nextInt();
         }
+        System.out.println(b);
+
+    
         
     }
     
