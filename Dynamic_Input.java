@@ -10,9 +10,13 @@ public class Dynamic_Input {
        for(int i=0;i<m;i++){
         b[i] = a.nextInt();
        }
-
+       System.out.println("Entered using for loop");
        for(int i=0;i<m;i++){
         System.out.println(b[i]);
+       }
+       System.out.println("Entered using for each loop");
+       for(int element : b){
+        System.out.println(element);
        }
 
 
