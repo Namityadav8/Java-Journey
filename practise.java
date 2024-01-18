@@ -2,26 +2,19 @@ import java.util.Scanner;
 
 public class practise {
     public static void main(String[] args) {
-        // Scanner a = new Scanner(System.in);
-        // int b =  a.nextInt();
-        // System.out.println("Entered number is " + b);
-
-        // String  c = a.nextLine();
-        // System.out.println(c);
-        // System.out.println(3==6);
-        // System.out.println(2&3);
-
-        // int a =6;
-        // int b = 1;
-        // int k = a*b/2;
-        // System.out.println(k);
-        Scanner a = new Scanner(System.in);
-        int [] b = new int[5];
+        Scanner b = new Scanner(System.in);
+        int [] a ;
+        a = new int[5];
         for(int i=0;i<5;i++){
-            b[i] = a.nextInt();
+            a[i] = b.nextInt();
         }
-        System.out.println(b);
 
+        for(int i=0;i<5;i++){
+            System.out.println(a[i]);
+        }
+        for(int bitch : a){
+            System.out.println(bitch);
+        }
     
         
     }
