@@ -16,6 +16,7 @@ public class Methods {
         Methods object  = new Methods();// created an object named object.
         int e = object.Sum(4, 10);
         System.out.println(e);
+        
     }
     
 }
