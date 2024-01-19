@@ -18,6 +18,7 @@ public class Dynamic_Input {
        for(int element : b){
         System.out.println(element);
        }
+       
 
 
 
