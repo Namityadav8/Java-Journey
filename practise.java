@@ -1,5 +1,14 @@
 import java.util.Scanner;
 public class practise {
+
+     int a (int a,int b){
+        int c=a+b;
+        return c;
+    }
+    void m(){
+        System.out.println("Fuck you");
+    }
+    
     public static void main(String[] args) {
         Scanner b = new Scanner(System.in);
         // int [][] a = new int[2][3];
@@ -18,7 +27,15 @@ public class practise {
         //     }
         //      System.out.println("");
         // }
-        int a = 3;
-        System.out.println("the value is " + a);
+        // int a = 3;
+        // System.out.println("the value is " + a);
+        practise x = new practise();
+        int c = x.a(3,4);
+            x.m();  
+        System.out.println(c);
+
+
+
+
     }   
 }
