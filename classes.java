@@ -14,6 +14,7 @@ public class classes {
         //setting attributes
         a.func(); 
          
+         
     }
     
 }
