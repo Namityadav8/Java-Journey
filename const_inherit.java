@@ -15,19 +15,19 @@ class base1{
 
 class derived2 extends base1{                                     
     derived2(){ 
-        super(13);
-       // super(23);  //this will redirecrt to the overload. const. 
+        // super(13);
+        //this will redirecrt to the overload. const. 
         System.out.println("inside derived class");
     }
-    derived2(int m,int a){
+    derived2(int m , int n){
         // super(23); // only if derived const is also argumented as we can pass derived arguments from main 
         //func itslef but have to pass base class using super .
-        System.out.println("inside derived overloaded const " + (m+a));
+        System.out.println("inside derived overloaded const "+ (m+n));
     }
 }
 public class const_inherit {
     public static void main(String[] args) {
-        // base1 a = new base1();
-        derived2 b = new derived2();   
+        base1 a = new base1();
+        derived2 b = new derived2(23,4);   
     }
 }
