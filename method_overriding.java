@@ -21,7 +21,7 @@ public class method_overriding {
         // A a = new A();
         B b = new B();
         
-        System.out.println(b.x(20,12));
+        System.out.println(b.x(23, 12));
         // System.out.println(b.x(2,3));
         // b.x();
        
