@@ -1,50 +1,25 @@
-import java.util.Scanner;
+class A{
+    public void x(){
+        System.out.println("base class me hu");
+    }
+    public void y(){
+        System.out.println("base k dusre me hu");
+    }
+}
+
+class B extends A{
+    public void x(){
+        super.x();
+        System.out.println("derived me hu");
+    }
+
+    public void y(){
+        System.out.println("derived k dusre me hu");
+    }
+}
 public class practise {
 
-    //  int a (int a,int b){
-    //     int c=a+b;
-    //     return c;
-    // }
-    // void m(){
-    //     System.out.println("Fuck you");
-    // }
-     public static void sum(){
-        int a = 34;
-        int d = 12;
-        int c = a +d;
-        System.out.println(c);
-    }
     public static void main(String[] args) {
-        // Scanner b = new Scanner(System.in);
-        // int [][] a = new int[2][3];
-        // for(int i=0;i<a.length;i++){
-        //     for(int j=0;j<a[i].length;j++){
-        //         a[i][j] = b.nextInt();
-        //     }
-        //      System.out.println("");
-        // }
-        practise b = new practise();
-         b.sum();
-        // System.out.println("these numbers you have chosen in array");
-        // for(int i=0;i<a.length;i++){
-        //     for(int j=0;j<a[i].length;j++){
-        //         System.out.print(a[i][j]);
-        //         System.out.print(" ");
-        //     }
-        //      System.out.println("");
-        // }
-        // int a = 3;
-        // System.out.println("the value is " + a);
-        // practise x = new practise();
-        // int c = x.a(3,4);
-        //     x.m();  
-        // System.out.println(c);
-        // int [] b = new int[10];
-        // for(int a : b ){
-            
-        }
-
-
-
-
-    }   
+        A obj = new B();
+        obj.y();
+ 
