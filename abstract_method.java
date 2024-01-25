@@ -15,8 +15,8 @@ abstract class derived extends base{
 
 class derived2 extends base{
     public void greet(){
-        System.out.println("namaste");
-    }
+        System.out.println("namaste"); // here we have defined the abstract methods 
+    }                                    // that's why abstract is not needed
 
     public void sayhello(){
         System.out.println("hello");
@@ -28,6 +28,5 @@ public class abstract_method {
         //base obj1 = new base(); // obj of abstract class can't created 
         //object of concrete class is used to access all the methods in asbtract and concrete class
         obj.greet();
-        
     }
 }
