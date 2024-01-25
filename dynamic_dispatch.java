@@ -1,3 +1,4 @@
+// it is done to acheive polymorphism as objects are created at runtime.
 class A{
     public void x(){
         System.out.println("A class me hu");
@@ -9,7 +10,7 @@ class A{
 
 class B extends A{
     public void x(){
-        super.x();
+        // super.x(); // it is used to print the parent class overrided method 
         System.out.println("B class me hu");
     } 
     public void z(){
@@ -19,10 +20,11 @@ class B extends A{
 public class dynamic_dispatch {
 
     public static void main(String[] args) {
-        A obj = new B();
+        A obj = new B(); // A is reference pointing to the new object B/
 
         // obj.y();
         obj.x();
+        obj.y();/// it will also work 
       //  obj.z();  create error 
     }
 }
