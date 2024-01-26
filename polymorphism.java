@@ -8,7 +8,7 @@ class toyota implements car{
     }
 }
 
-class tesla implements car{
+class tesla extends toyota implements car{ // still it will call its own method defined in its class
     public void company(){
         System.out.println("elon musk vali ");
     }
@@ -19,5 +19,8 @@ public class polymorphism {
         car c = new tesla();
         b.company();   // interface cant make objects here it is only reffering to interface 
         c.company();
+       
+            
+      
     }
 }

@@ -5,7 +5,7 @@ public class D2_Array {
         Scanner a = new Scanner(System.in);
         int m,n;
         System.out.println("No. of Rows and Columns you want : ");
-
+        
         m=a.nextInt();
         n=a.nextInt();
 
