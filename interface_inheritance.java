@@ -17,6 +17,8 @@ class beta extends baap{  // here we have extended our class baap and inherited 
 }
 public class interface_inheritance {
     public static void main(String[] args) {
-        
+        beta b = new beta();
+        b.func1();
+        b.func2();
     }
 }

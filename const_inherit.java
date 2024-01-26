@@ -14,7 +14,7 @@ class base1{
 }
 
 class derived2 extends base1{                                     
-    derived2(){ 
+    derived2(){     
         // super(13);
         //this will redirecrt to the overload. const. 
         System.out.println("inside derived class");
