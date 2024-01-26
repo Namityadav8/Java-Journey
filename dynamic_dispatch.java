@@ -1,4 +1,4 @@
-// it is done to acheive polymorphism as objects are created at runtime.
+// it is done to acheive polymorphism as objects are created at runtime using method overriding .
 class A{
     public void x(){
         System.out.println("A class me hu");
@@ -10,7 +10,7 @@ class A{
 
 class B extends A{
     public void x(){
-        // super.x(); // it is used to print the parent class overrided method 
+        super.x(); // it is used to print the parent class overrided method 
         System.out.println("B class me hu");
     } 
     public void z(){
@@ -24,7 +24,7 @@ public class dynamic_dispatch {
 
         // obj.y();
         obj.x();
-        obj.y();/// it will also work 
+        // obj.y();/// it will also work 
       //  obj.z();  create error 
     }
 }

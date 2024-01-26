@@ -25,8 +25,15 @@ class derived2 extends base{
 public class abstract_method {
     public static void main(String[] args) {
         derived2 obj = new derived2();
-        //base obj1 = new base(); // obj of abstract class can't created 
+        // base obj1 = new base(); // obj of abstract class can't created 
         //object of concrete class is used to access all the methods in asbtract and concrete class
-        obj.greet();
+        // obj.greet();
+        base v = new derived2();//dynamic method dispatch : only way to access methods of abstract class 
+        v.x();                  // using concrete class refer. of abstr. and obj of concrete
+            
+         
+        
+        
+    
     }
 }
