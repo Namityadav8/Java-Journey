@@ -35,6 +35,6 @@ public class abstract_method {
         // obj.greet();
         base v = new derived2();//dynamic method dispatch : only way to access methods of abstract class 
         v.x();                  // using concrete class refer. of abstr. and obj of concrete
-        v.nk();
+        v.nk(); // here we are calling the method of abstract class using concrete class.
     }
 }
