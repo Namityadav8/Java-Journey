@@ -2,6 +2,10 @@ interface bicycle{
     public final int b =23;
     void brake(int decreament);
     void speed(int increament);
+    default void m(){
+        System.out.println("say my name");
+    }
+   
 }
 abstract class Avon implements bicycle{
    public void ex(){
@@ -9,7 +13,7 @@ abstract class Avon implements bicycle{
    }
 }
 
-class derived extends Avon{
+class derived extends Avon implements bicycle{
     public void brake(int a){
         System.out.println("brakes laga rha hu");
     }
@@ -25,13 +29,14 @@ public class interfaces {
         // System.out.println(bike.b); // since it is a int value we have to store it in a other integer or print it 
        derived obj = new derived();
        obj.brake(23);
-
+      
+        
        Avon obj1 = new derived();
        obj1.ex(); // it is basically a way to access the elements of abstract class using concrete class
                 // using dynamic dispatch method . 
 
 
 
-                
+
     }
 }
