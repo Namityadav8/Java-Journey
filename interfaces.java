@@ -3,32 +3,35 @@ interface bicycle{
     void brake(int decreament);
     void speed(int increament);
 }
-
-interface ayodhya{
-    void RamMandir();
-    void pray();
+abstract class Avon implements bicycle{
+   public void ex(){
+    System.out.println("abstract try kr rha tha ");
+   }
 }
- class Avon implements bicycle,ayodhya{
+
+class derived extends Avon{
     public void brake(int a){
-        System.out.println("laga laga brake");
+        System.out.println("brakes laga rha hu");
     }
+
     public void speed(int b){
-        System.out.println("or tej or tej");
+        System.out.println("or tej chalayege ab bc ");
     }
-
-    public void RamMandir(){
-        System.out.println("Mere Ram Aye hai ");        // either define the methods in interface
-    }                                                     // or make the class abstract
-    public void pray(){
-        System.out.println("Sare bolo jai shree ram");
-    }
-
 }
 public class interfaces {
     public static void main(String[] args) {
-        Avon bike = new Avon();
-        bike.brake(12);
-        System.out.println(bike.b); // since it is a int value we have to store it in a other integer or print it 
-        bike.RamMandir();
+        // Avon bike = new Avon();
+        // bike.brake(12);
+        // System.out.println(bike.b); // since it is a int value we have to store it in a other integer or print it 
+       derived obj = new derived();
+       obj.brake(23);
+
+       Avon obj1 = new derived();
+       obj1.ex(); // it is basically a way to access the elements of abstract class using concrete class
+                // using dynamic dispatch method . 
+
+
+
+                
     }
 }

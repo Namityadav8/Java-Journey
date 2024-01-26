@@ -2,6 +2,10 @@ abstract class base{
     public void x(){
         System.out.println("Base class me hu");
     }
+    public void nk(){
+       System.out.println("bekar khana");
+    }
+  
 
     abstract public void greet();// here the asbtract method is created
     abstract public void sayhello();
@@ -11,6 +15,7 @@ abstract class derived extends base{
     public void nk(){
         System.out.println("khana kha lo gays");
     }
+    
 }
 
 class derived2 extends base{
@@ -30,6 +35,6 @@ public class abstract_method {
         // obj.greet();
         base v = new derived2();//dynamic method dispatch : only way to access methods of abstract class 
         v.x();                  // using concrete class refer. of abstr. and obj of concrete
-            
+        v.nk();
     }
 }
