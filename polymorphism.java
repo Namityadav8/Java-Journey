@@ -8,7 +8,11 @@ class toyota implements car{
     }
 }
 
-
+class tesla extends toyota implements car{ // still it will call its own method defined in its class
+    public void company(){
+        System.out.println("elon musk vali ");
+    }
+}
 public class polymorphism {
     public static void main(String[] args) {
         car b = new toyota();
