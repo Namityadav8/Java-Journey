@@ -14,13 +14,11 @@ class tesla extends toyota implements car{ // still it will call its own method 
     }
 }
 public class polymorphism {
-    public static void main(String[] args) {
+ 
+        public static void main(String[] args) {
         car b = new toyota();
         car c = new tesla();
         b.company();   // interface cant make objects here it is only reffering to interface 
         c.company();
-       
-            
-      
     }
 }
