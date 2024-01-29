@@ -1,13 +1,15 @@
-// import java.lang.Thread;
-// import java.util.Concurrent;
 class MyThread1 extends Thread {
     @Override
     public void run() {
         // Code for the first thread
-        
-        while (true) {
-            System.out.println("hello");
-            
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+            try {
+                // Introduce a delay of 100 milliseconds
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
@@ -15,11 +17,14 @@ class MyThread1 extends Thread {
 class MyThread2 extends Thread {
     @Override
     public void run() {
-        // Code for the second thread
-     
-        while (true) {
-            System.out.println("hi");
-           
+        for (int i = 5; i < 10; i++) {
+            System.out.println(i);
+            try {
+                // Introduce a delay of 100 milliseconds
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
@@ -29,7 +34,7 @@ public class threading {
         MyThread1 thread1 = new MyThread1();
         MyThread2 thread2 = new MyThread2();
         
-        thread1.start(); // Start the first thread
-        thread2.start(); // Start the second thread
+        thread1.start(); 
+        thread2.start();
     }
 }
