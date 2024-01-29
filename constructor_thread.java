@@ -1,18 +1,20 @@
 class thr extends Thread{
-
     public thr(String name){
-       super(name); // here it is used to call the constructor of superclass 
+        super(name); // here we are passing that name to the const of superclass.
     }
     public void run(){
-        System.out.println("jai shree ram");
+        System.out.println("ram ram");
     }
 }
-
 public class constructor_thread {
     public static void main(String[] args) {
-        thr obj = new thr("Namit");
+        thr a = new thr("namit");
+        thr b = new thr("harsh");
 
-        System.out.println("thread id is " + obj.getId());
-        System.out.println("thread name is " + obj.getName());
+        System.out.println("ID of namit is " + a.getId());
+        System.out.println("name is " + a.getName());
+
+        System.out.println("id of harsh is " + b.getId());
+        System.out.println("name of harsh is " + b.getName());
     }
 }
