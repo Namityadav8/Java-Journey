@@ -10,7 +10,7 @@ class B implements Runnable{
     }
 }
 public class runnable_interface {
-
+    
     public static void main(String[] args) {
         A obj = new A(); 
         B obj1 = new B();
