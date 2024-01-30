@@ -1,25 +1,26 @@
-class A{
-    public void x(){
-        System.out.println("base class me hu");
-    }
-    public void y(){
-        System.out.println("base k dusre me hu");
+class Mythread extends Thread{
+    public void run(){
+        System.out.println("Hello");
+        System.out.println("Hello");
+        System.out.println("Hello");
+        System.out.println("Hello");
     }
 }
 
-class B extends A{
-    public void x(){
-        super.x();
-        System.out.println("derived me hu");
-    }
-
-    public void y(){
-        System.out.println("derived k dusre me hu");
+class Mythread1 extends Thread{
+    public void run(){
+        System.out.println("hi ");
+        System.out.println("hi ");
+        System.out.println("hi ");
+        System.out.println("hi ");
     }
 }
 public class practise {
 
     public static void main(String[] args) {
-        A obj = new B();
-        obj.y();
- 
+        Mythread a = new Mythread();
+        Mythread1 b = new Mythread1();
+        a.start();
+        b.start();
+    }
+}

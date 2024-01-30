@@ -12,3 +12,6 @@ public class constructor_thread {
         obj.start();
     }
 }
+
+
+// HAD TO DO AGAIN AS IT IS NOT CLEARED .
