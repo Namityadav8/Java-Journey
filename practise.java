@@ -1,9 +1,7 @@
 class Mythread extends Thread{
     public void run(){
         System.out.println("Hello");
-        System.out.println("Hello");
-        System.out.println("Hello");
-        System.out.println("Hello");
+        
     }
 }
 
@@ -11,9 +9,7 @@ class Mythread1 extends Thread{
     public void run(){
         System.out.println("hi ");
         System.out.println("hi ");
-        System.out.println("hi ");
-        System.out.println("hi ");
-    }
+        
 }
 public class practise {
 
