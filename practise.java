@@ -86,8 +86,40 @@ public class practise {
         //     case 7 -> System.out.println("Sunday");
         //     default -> System.out.println("Invalid day");
         // }
+   
+                System.out.println("Enter the number between 1-100: ");
+                if (args.length < 1) {
+                    System.out.println("Please enter only one number.");
+                    return;
+                }
         
-        
+                int number = Integer.parseInt(args[0]);  /// parsing method is done to convert it from string to int 
+                if (number >= 96 && number <= 100) {
+                    System.out.println("Grade A+");
+                } else if (number >= 91 && number <= 95) {
+                    System.out.println("Grade A+");
+                } else if (number >= 86 && number <= 90) {
+                    System.out.println("Grade B+");
+                } else if (number >= 81 && number <= 85) {
+                    System.out.println("Grade B");
+                } else if (number >= 76 && number <= 80) {
+                    System.out.println("Grade B-");
+                } else if (number >= 71 && number <= 75) {
+                    System.out.println("Grade C+");
+                } else if (number >= 66 && number <= 70) {
+                    System.out.println("Grade C");
+                } else if (number >= 61 && number <= 65) {
+                    System.out.println("Grade C-");
+                } else if (number >= 56 && number <= 60) {
+                    System.out.println("Grade D+");
+                } else if (number >= 51 && number <= 55) {
+                    System.out.println("Grade D");
+                } else if (number >= 0 && number <= 50) {
+                    System.out.println("Grade F");
+                } else {
+                    System.out.println("Please enter a number between 0-100.");
+                }
+             
 
 
 
