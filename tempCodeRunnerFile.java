@@ -1,2 +1,3 @@
-import java.lang.Thread;
-// import java.util.Concurrent;
+float p = 23.326745f;
+                int namit = (int) p;
+                System.out.println(namit);

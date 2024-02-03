@@ -86,7 +86,9 @@ public class practise {
         //     case 7 -> System.out.println("Sunday");
         //     default -> System.out.println("Invalid day");
         // }
-   
+                float p = 23.326745f;
+                int namit = (int) p;
+                System.out.println(namit);
                 System.out.println("Enter the number between 1-100: ");
                 if (args.length < 1) {
                     System.out.println("Please enter only one number.");
