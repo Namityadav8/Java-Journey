@@ -4,6 +4,7 @@ class Mythr extends Thread{
     }
     public void run(){
         System.out.println("hi");
+        
     }
 
 }
@@ -13,12 +14,12 @@ public class thread_constructor {
     public static void main(String[] args) {
         Mythr a = new Mythr("namit");
         Mythr b = new Mythr("yadav");
-
+        a.setPriority(Thread.MAX_PRIORITY);
         a.start();
         b.start();
         System.out.println("The id of thread is "+ a.getId());
         System.out.println("the name of thread is "+ a.getName());
 
-        
+
     }
 }
