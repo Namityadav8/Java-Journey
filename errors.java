@@ -13,8 +13,6 @@ public class errors {
         System.out.println("enter the number you want to divide it by");
         int c = a.nextInt();                                        // stuck here and exit 
       try{   
-                         
-        System.out.println(marks[b]/c);
         System.out.println("the divide is "+ marks[b]/c);
       }
       catch(ArithmeticException e){
