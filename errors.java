@@ -19,11 +19,11 @@ public class errors {
       }
       catch(ArithmeticException e){
     
-        System.out.println("Arithmetic exception error ");
+        System.out.println("Arithmetic exception error aya hai lawde ");
         System.out.println(e);
       }
       catch(ArrayIndexOutOfBoundsException e){
-        System.out.println("answer is " + marks[b]/c);5
+        System.out.println("answer is out of bound");
         
       }
       catch(Exception e){  // we can use anything its not fixed to e or something else.
