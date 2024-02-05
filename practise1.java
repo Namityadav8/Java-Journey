@@ -11,6 +11,7 @@ public class practise1 {
     public static void main(String[] args) {
         namit yadav = new namit("kesar"); // passed to thread
         yadav.start();
-        System.out.println(yadav.getName()); //
+        System.out.println(yadav.getName()); // to access the name passed to thread .
+        System.out.println(yadav.getId());// by default it will give the default id .
     }
 }
