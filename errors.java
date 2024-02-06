@@ -18,12 +18,12 @@ public class errors {
       catch(ArithmeticException e){
     
         System.out.println("Arithmetic exception error aya hai lawde ");
-        System.out.println(e);
+        // System.out.println(e);
       }
       catch(ArrayIndexOutOfBoundsException e){
         System.out.println("answer is out of bound");
-        
-      } // below one will be runned at last after all specific exceptions .
+      }
+       // below one will be runned at last after all specific exceptions .
       catch(Exception e){  // we can use anything its not fixed to e or something else.
         System.out.println("We Failed to find division ");
         System.out.println(e); // here e is used to basically give the output why it isnt executed .
