@@ -18,8 +18,7 @@ public class exceptionClass {
         int b =a.nextInt();
         if(b>9){
         try{
-            throw new MyException();
-            throw new ArithmeticException("kar dia na error");
+            throw new MyException(); 
         }
         catch(Exception e){
             System.out.println(e.getMessage());
