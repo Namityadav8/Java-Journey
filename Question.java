@@ -1,13 +1,23 @@
+import java.util.Scanner;
+
 public class Question {
+
     public static void main(String[] args) {
-        int a[] = {1,2,3,4,5};
-        for(int i:a){
-            if(i%2==0){
-                System.out.println(i +" is even");
-            }
-            else{
-                System.out.println(i+" is odd");
-            }
+        Scanner a = new Scanner(System.in);
+        System.out.println("Enter number of subjects ");
+        int b =a.nextInt();
+        System.out.println("Enter marks in subjects :");
+        int [] marks = new int[b];
+
+        for(int i=0;i<b;i++){
+            marks[i] = a.nextInt();
         }
+        int result =0;
+        for(int i=0;i<b;i++){
+            result+=marks[i];
+        }
+
+        System.out.println("percentage scored is "+((result)/b)+"%");
+
     }
 }
