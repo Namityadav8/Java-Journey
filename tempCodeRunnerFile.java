@@ -1,3 +1,2 @@
-float p = 23.326745f;
-                int namit = (int) p;
-                System.out.println(namit);
+ String x = "Namit";
+        System.out.println(x.substring(3));
