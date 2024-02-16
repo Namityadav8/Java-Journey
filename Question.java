@@ -1,23 +1,31 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class Question {
+        public static void main(String[] args) {
+            Scanner x = new Scanner(System.in);
+            System.out.println("Enter the numbers of rows you want in your jagged array: ");
+            int rows = x.nextInt();
+            int [][] jagged = new int[rows][];
+            for(int i=0;i<rows;i++){
+                System.out.println("Now tell me the numbers of elements you want in this row:  ");
 
-    public static void main(String[] args) {
-        Scanner a = new Scanner(System.in);
-        System.out.println("Enter number of subjects ");
-        int b =a.nextInt();
-        System.out.println("Enter marks in subjects :");
-        int [] marks = new int[b];
+                int cols = x.nextInt();
+                jagged[i] = new int[cols];
+                for(int j=0;j<cols;j++){
+                    jagged[i][j]=x.nextInt();
+                }
+            }
 
-        for(int i=0;i<b;i++){
-            marks[i] = a.nextInt();
+            //now its time to print the jagged array having all the elements of diff size
+            for(int i=0;i<jagged.length;i++){ // jagged.length return number of rows 
+                for(int j=0;j<jagged[i].length;j++){ // here it will return numbers of elements in ith roq
+                    System.out.print(jagged[i][j]+" ");
+                }
+                System.out.println("");
+            }
+
+
+
+
         }
-        int result =0;
-        for(int i=0;i<b;i++){
-            result+=marks[i];
-        }
-
-        System.out.println("percentage scored is "+((result)/b)+"%");
-
-    }
+    
 }
