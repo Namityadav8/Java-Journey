@@ -15,7 +15,7 @@ public class Question {
                 }
             }
 
-            //now its time to print the jagged array having all the elements of diff size
+//now its time to print the jagged array having all the elements of diff size
             for(int i=0;i<jagged.length;i++){ // jagged.length return number of rows 
                 for(int j=0;j<jagged[i].length;j++){ // here it will return numbers of elements in ith roq
                     System.out.print(jagged[i][j]+" ");
