@@ -9,9 +9,9 @@ public class Question {
                 System.out.println("Now tell me the numbers of elements you want in this row:  ");
 
                 int cols = x.nextInt();
-                jagged[i] = new int[cols];
+                jagged[i] = new int[cols]; // here creating the number of elements in each row 
                 for(int j=0;j<cols;j++){
-                    jagged[i][j]=x.nextInt();
+                    jagged[i][j]=x.nextInt(); // here taking input in nth row and inserting colums in it 
                 }
             }
 
