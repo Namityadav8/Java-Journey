@@ -2,11 +2,11 @@ import java.util.*;
 public class practise3 {
     public static void fib(int n){
         int a = 0;
-        int b =1;
+        int b = 1;
 
         System.out.print(a+" "+b+" ");
 
-        for(int i=2;i<n;i++){
+        for(int i=2;i<n-1;i++){
             int next = a+b;
             System.out.print(next+" ");
             a=b;
