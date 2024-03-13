@@ -1,7 +1,11 @@
 import java.util.Scanner;
 public class revise {
-    public int sum(int a , int b){
+    public static int sum(int a , int b){
         return a+b;
+    }
+    @
+    public static int sum(int a , int b , int c){
+        return a+b+c;
     }
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
@@ -22,10 +26,13 @@ public class revise {
         //         System.out.print(" ");
         //     }
         //     System.out.println("");
-        // }
-        revise obj = new revise();
+        // // }
+        // revise obj = new revise();
         // System.out.println(obj.sum(23,345));
-        
+            System.out.println(sum(23,4));
+            System.out.println(sum(23,4,234));
+
+
 
 
 
