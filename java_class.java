@@ -1,13 +1,14 @@
 import java.util.Scanner;
+
 public class java_class {
     public static void main(String[] args) {
         Scanner a = new Scanner(System.in);
+        String s = a.nextLine();
 
-        // String b = a.nextLine();
-        // char c = a.next().charAt(0);
-        // int d = a.nextInt();
-        // float e = a.nextFloat();
-        int b [] = {1,23,4555,7,8};
-
+        char[] c = s.toCharArray();
+        int m = c.length - 1;
+        for (int i = m; i >= 0; i--) {
+            System.out.print(c[i]);
+        }
     }
 }
