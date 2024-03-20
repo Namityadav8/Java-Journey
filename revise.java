@@ -31,8 +31,7 @@ public class revise {
         // System.out.println(obj.sum(23,345));
             System.out.println(sum(23,4));
             System.out.println(sum(23,4,234));
-
-
+            
 
 
 

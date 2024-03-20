@@ -1,23 +1,30 @@
+import java.util.*;
 @FunctionalInterface
+
 interface a{
-    void fun(int a );
+    void fun(String pal );
 }
 
 
 public class Lambda_expr {
     public static void main(String[] args) {
-        a obj = (int x ) -> {
-            int a = 0, b = 1;
-            System.out.println("First " + x + " Fibonacci numbers:");
-            System.out.print(a + " " + b + " "); 
-    
-            for (int i = 2; i < x; i++) {
-                int c = a + b; 
-                System.out.print(c + " ");
-                a = b; 
-                b = c; 
+        Scanner sc = new Scanner(System.in);
+        String y = sc.nextLine();
+        a obj = (String pal ) -> {
+            char[] m = y.toCharArray();
+            for(int i=y.length()-1;i>=0;i--){
+                System.out.print(m[i]);
+            }
+            System.out.println();
+            String z = String.valueOf(m);
+            if(z.equalsIgnoreCase(y)){
+                System.out.println("It is a palindrome ");
+            }
+            else{
+                System.out.println("it isnt a palindrome");
             }
         };
-        obj.fun(6);
+    
+        obj.fun(y);
     }
 } 
