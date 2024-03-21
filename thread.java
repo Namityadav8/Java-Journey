@@ -5,7 +5,7 @@ class A extends Thread{
             try {
                 Thread.sleep(100);
             } catch (Exception e) {
-                // TODO: handle exception
+                System.out.println("error");
             }
 
         }
@@ -19,7 +19,7 @@ class B extends Thread{
         try {
             Thread.sleep(50);
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println("error agya");
         }
         }
     }
