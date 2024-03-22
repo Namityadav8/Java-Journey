@@ -1,20 +1,24 @@
-class A{
-    public void hello(){
-        System.out.println("hello");
+class base{
+    public void A(){
+        System.out.println("Inside a ");
+    }
+    public void B(){
+        System.out.println("Inside B");
     }
 }
 
-class B extends A{
-    public void hello(){
-        super.hello();
-        System.out.println("hello bahisaab");
+class derived extends base{
+    public void A(){
+        System.out.println("Inside a of derived ");
     }
-
+    public void C(){
+        System.out.println("Inside c    ");
+    }
 }
 public class java_class {
-
     public static void main(String[] args) {
-        B b = new B();
-        b.hello();
+        base obj = new derived();
+         
     }
+    
 }
