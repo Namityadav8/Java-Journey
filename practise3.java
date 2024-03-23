@@ -1,28 +1,20 @@
-class A{
-    public void a(){
-        System.out.println("Inside the function 1");
-    }
-
-    public void b(){
-        System.out.println("inside the function 2");
-    }
-
+interface A{
+    public void fun();
+    public void max();
 }
 
-class B extends A{
-    public void b(){
-        System.out.println("Inside overrided function 2");
+class a implements A{
+    public void fun(){
+        System.out.println("function");
     }
 
-    public void c(){
-        System.out.println("inside the function 3");
+    public void max(){
+        System.out.println("Maximum");
     }
 }
 public class practise3 {
 
     public static void main(String[] args) {
-        A obj = new B();
-        obj.b();
-        obj.a();
+        
     }
 }
