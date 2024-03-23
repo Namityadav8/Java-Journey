@@ -1,21 +1,28 @@
-import java.util.*;
-public class practise3 {
-    public static void fib(int n){
-        int a = 0;
-        int b = 1;
-
-        System.out.print(a+" "+b+" ");
-
-        for(int i=2;i<n-1;i++){
-            int next = a+b;
-            System.out.print(next+" ");
-            a=b;
-            b=next;
-        }
+class A{
+    public void a(){
+        System.out.println("Inside the function 1");
     }
+
+    public void b(){
+        System.out.println("inside the function 2");
+    }
+
+}
+
+class B extends A{
+    public void b(){
+        System.out.println("Inside overrided function 2");
+    }
+
+    public void c(){
+        System.out.println("inside the function 3");
+    }
+}
+public class practise3 {
+
     public static void main(String[] args) {
-        Scanner a = new Scanner(System.in);
-        int y = a.nextInt();
-        fib(y);
+        A obj = new B();
+        obj.b();
+        obj.a();
     }
 }
