@@ -3,7 +3,7 @@ interface A{
     public void max();
 }
 
-class a implements A{
+class parent implements A{
     public void fun(){
         System.out.println("function");
     }
@@ -13,7 +13,6 @@ class a implements A{
     }
 }
 public class practise3 {
-
     public static void main(String[] args) {
         
     }
