@@ -1,16 +1,18 @@
-/**
- * Expressions
- */
+
 public class Expressions {
 
     public static void main(String[] args) {
         System.out.println("Hello Class ");
         int a =12,b=0,c;
         try {
-            c=a/b;
+            try {
+                c=a/b;
             System.out.println(c);
-        } catch (Exception e) {
-            System.out.println("Error aa gaya bc");
+            } catch ( ArrayIndexOutOfBoundsException e) {
+                System.out.println(e);
+            }
+        } catch (ArithmeticException e ) {
+            System.out.println(e);
         }
         
         System.out.println("END");
