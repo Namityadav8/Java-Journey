@@ -1,18 +1,18 @@
-
+/**
+ * Expressions
+ */
 public class Expressions {
 
     public static void main(String[] args) {
-        // int a=3;
-        // System.out.println(a++);
-        // System.out.println(++a);
-        // System.out.println(a--);
-        // System.out.println(--a);
-        // char a = 'A';
+        System.out.println("Hello Class ");
+        int a =12,b=0,c;
+        try {
+            c=a/b;
+            System.out.println(c);
+        } catch (Exception e) {
+            System.out.println("Error aa gaya bc");
+        }
         
-        // int b = 5;
-        float c = 5.647568342652f;
-        // System.out.printf("value of b and c is %d and %f " , b , c);
-        System.out.printf("value of c is %.4f",c);
-        // System.out.println(++a + ++b); 
+        System.out.println("END");
     }
 }
