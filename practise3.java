@@ -1,19 +1,9 @@
-interface A{
-    public void fun();
-    public void max();
-}
-
-class parent implements A{
-    public void fun(){
-        System.out.println("function");
-    }
-
-    public void max(){
-        System.out.println("Maximum");
-    }
-}
 public class practise3 {
+
     public static void main(String[] args) {
+        String a = "1232";
+        int s = Integer.parseInt(a);
+        System.out.println(s);
         
     }
 }
