@@ -17,7 +17,7 @@ class B extends Thread{
         for(int i=0;i<10;i++){
         System.out.println("Class B");
         try {
-            Thread.sleep(50);
+            Thread.sleep(100);
         } catch (Exception e) {
             System.out.println("error agya");
         }
