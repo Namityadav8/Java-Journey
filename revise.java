@@ -1,41 +1,20 @@
-import java.util.Scanner;
+class a implements Runnable{
+    public void run(){
+        for(int i=0;i<10;i++){
+            System.out.println(i);
+            try {
+                Thread.sleep(100);
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+        }
+    }
+}
 public class revise {
-    public static int sum(int a , int b){
-        return a+b;
-    }
-    @
-    public static int sum(int a , int b , int c){
-        return a+b+c;
-    }
+
     public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
-        // System.out.println("Enter the number of elements you want to add in your matrix :");
-        // int m = x.nextInt();
-        // int n =x.nextInt();
-        // System.out.println("Now print the value of the matrix ");
-        // int [][] a = new int[m][n];
-        // for(int i=0;i<a.length;i++){
-        //     for(int j=0;j<a[i].length;j++){
-        //         a[i][j] = x.nextInt();
-        //     }
-        // }
-        // System.out.println("Now printing the matrix that you have created :");
-        // for(int i=0;i<a.length;i++){
-        //     for(int j=0;j<a[i].length;j++){
-        //         System.out.print(a[i][j]);
-        //         System.out.print(" ");
-        //     }
-        //     System.out.println("");
-        // // }
-        // revise obj = new revise();
-        // System.out.println(obj.sum(23,345));
-            System.out.println(sum(23,4));
-            System.out.println(sum(23,4,234));
-            
-
-
-
-
-
+        a obj = new a();
+        Thread sc = new Thread(obj);
+        sc.start();
     }
 }
