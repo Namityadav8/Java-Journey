@@ -15,8 +15,6 @@
             // A obj = new A();
             A.B obj1 = new A.B();  // we can directly access the nested class without the instantiation of main class 
             obj1.fun1();
-            namit sc = new namit(null);
-            sc.q();
 
         }
     }

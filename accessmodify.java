@@ -1,13 +1,11 @@
-class A{
-    public int a = 23;
-    public int b = 256;
-    protected int c = 231;
-    int d = 90;
-}
+import raj.sum;
+/**
+ * accessmodify
+ */
 public class accessmodify {
+
     public static void main(String[] args) {
-        A x = new A();
-        
+        sum obj = new sum();
+        obj.sum1();
     }
 }
- 
