@@ -3,11 +3,11 @@ interface A{
 }
 public class revise {
     public static void main(String[] args) {
-        A obj =  new A(){
-            public void hello(){
-                System.out.println("HEllo hi");
-            }
-        };
+        A obj = () ->
+            {
+                System.out.println("ha bhai ");
+            };
+        
 
         obj.hello();
     }
