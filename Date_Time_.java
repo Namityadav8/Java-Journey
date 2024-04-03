@@ -1,16 +1,13 @@
 import java.util.Date;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 public class Date_Time_ {
     public static void main(String[] args) {
-        
-        
-        LocalDate d = LocalDate.now();
-        System.out.println(d);
+       LocalTime t = LocalTime.of(12,35,32);
+       System.out.println(t);
 
-        LocalTime t = LocalTime.now();
-        System.out.println(t);
+        
 
-        LocalDateTime dt = LocalDateTime.now();
-        System.out.println(dt);
+
     }
 }
