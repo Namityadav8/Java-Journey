@@ -13,8 +13,7 @@ public class FileHandling {
     }catch(IOException exception){
         System.out.println("An unexpected error is occured.");
         exception.printStackTrace();
+        }
     }
-    
-}
 }
 
