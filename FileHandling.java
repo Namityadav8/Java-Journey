@@ -62,26 +62,18 @@ public class FileHandling {
         
 
 
-        // try{
-        //     File f1 = new File("input.txt");
-        //     Scanner dataReader = new Scanner(f1);
-        //     while(dataReader.hasNextLine()){
-        //         String fileData = dataReader.nextLine();
-        //         System.out.println(fileData);
-        //     }
-        //     dataReader.close();
-        // }catch(FileNotFoundException exception){
-        //     System.out.println("Unexpected error occured");
-        //     exception.printStackTrace();
-// writing anything on the file that you have created
-        try {
-            FileWriter fwrite = new FileWriter("input.txt");
-            fwrite.write("A named location used to store the related info is reffered to as a file ");
-            fwrite.close();
-            System.out.println("Content is successfully wrote on this file ");
-        } catch (IOException e) {
-            System.out.println("Unexpected error");
-            e.printStackTrace();
-        }
+        try{
+            File f1 = new File("input.txt");
+            Scanner dataReader = new Scanner(f1);
+            while(dataReader.hasNextLine()){
+                String fileData = dataReader.nextLine();
+                System.out.println(fileData);
+            }
+            dataReader.close();
+        }catch(FileNotFoundException exception){
+            System.out.println("Unexpected error occured");
+            exception.printStackTrace();
+            }
+        
     }
 }
