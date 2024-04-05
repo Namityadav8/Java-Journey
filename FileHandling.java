@@ -62,18 +62,25 @@ public class FileHandling {
         
 
 
-        try{
-            File f1 = new File("input.txt");
-            Scanner dataReader = new Scanner(f1);
-            while(dataReader.hasNextLine()){
-                String fileData = dataReader.nextLine();
-                System.out.println(fileData);
-            }
-            dataReader.close();
-        }catch(FileNotFoundException exception){
-            System.out.println("Unexpected error occured");
-            exception.printStackTrace();
-            }
+        // try{
+        //     File f1 = new File("input.txt");
+        //     Scanner dataReader = new Scanner(f1);
+        //     while(dataReader.hasNextLine()){
+        //         String fileData = dataReader.nextLine();
+        //         System.out.println(fileData);
+        //     }
+        //     dataReader.close();
+        // }catch(FileNotFoundException exception){
+        //     System.out.println("Unexpected error occured");
+        //     exception.printStackTrace();
+        //     }
         
+
+        File f0 = new File("input.txt");
+        if(f0.delete()){
+            System.out.println(f0.getName()+"file is deleted successfully");
+        }else{
+            System.out.println("unexpected error found in deletion of the file .");
+        }
     }
 }

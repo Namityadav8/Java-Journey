@@ -1,1 +1,0 @@
-A named location used to store the related info is reffered to as a file 
