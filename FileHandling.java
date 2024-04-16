@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.util.*;
 public class FileHandling {
     public static void main(String[] args) {
+        
         // String basePath = "C:\\Local volume\\Programming\\Java\\IO\\";
         // String fileName = "input.txt";
         // File obj = new File(basePath + fileName);
@@ -76,11 +77,39 @@ public class FileHandling {
         //     }
         
 
-        File f0 = new File("input.txt");
-        if(f0.delete()){
-            System.out.println(f0.getName()+"file is deleted successfully");
-        }else{
-            System.out.println("unexpected error found in deletion of the file .");
+        // File f0 = new File("input.txt");
+        // if(f0.delete()){
+        //     System.out.println(f0.getName()+"file is deleted successfully");
+        // }else{
+        //     System.out.println("unexpected error found in deletion of the file .");
+        // }
+
+        //         try{
+        //             File f1 = new File("input.txt");
+        //             Scanner dataReader = new Scanner(f1);
+        //             while (dataReader.hasNextLine()) {
+        //                 String fileData=dataReader.nextLine();
+        //                 System.out.println(fileData);
+        //             }
+        //             dataReader.close();
+        //         }catch(FileNotFoundException exception)
+        //         {
+        //             System.out.println("unexpected error");
+        //             exception.printStackTrace();
+        // } 
+
+
+
+        try {
+            File input = new File("input.txt");
+            FileWriter output = new FileWriter("output.txt");
+            Scanner sc = new Scanner(input);
+            while(sc.hasNextLine()){
+                String data = sc.nextLine();
+                output.write(data);
+            }
+        output.close();
+        sc.close();
         }
     }
 }
