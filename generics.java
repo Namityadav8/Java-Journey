@@ -1,16 +1,16 @@
 import java.util.*;
-class A<T>{
+class A<T,U>{
     T a;
-    void fun(T b){
+    void fun(T b , U c){
         a=b;
-        System.out.println(b);
+        System.out.print(b+" "+c);
     }
 }
 public class generics {
     public static void main(String[] args) {
-        A<Integer> obj = new A<Integer>();
-        A<String> obj1 = new A<String>();
-        obj.fun(23);
-        obj1.fun("Namit");
+        A<Integer,String> obj = new A<Integer,String>();
+        A<String,Integer> obj1 = new A<String,Integer>();
+        obj.fun(23,"james");
+        obj1.fun("Namit",8);
     }
 }
