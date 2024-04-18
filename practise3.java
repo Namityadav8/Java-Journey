@@ -10,12 +10,10 @@ public class practise3 {
         Scanner sc = new Scanner(System.in);
         a=sc.nextInt();
         if(a==3){
-            throw new ArithmeticException();
+            throw new NegativeArraySizeException();
         }
         else{
             System.out.println("Alright");
         }
-       
-
     }
 }
