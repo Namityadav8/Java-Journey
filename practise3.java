@@ -9,6 +9,7 @@ public class practise3 {
             System.out.println(a);
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
+            e.printStackTrace();
         }
     }
 }
