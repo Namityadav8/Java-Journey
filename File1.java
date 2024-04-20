@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.FileAlreadyExistsException;
+import java.util.*;
 public class File1 {
     public static void main(String[] args) {
         // code wo create a new file 
@@ -24,5 +25,15 @@ public class File1 {
 
 
         //reading a file 
+        try {
+            Scanner sc = new Scanner(f1);
+            while(sc.hasNextLine()){
+                String line = sc.nextLine();
+                System.out.println(line);
+            }
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
