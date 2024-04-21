@@ -1,19 +1,10 @@
 import java.util.Scanner;
 
-/**
- * practise3
- */
 public class practise3 {
-    
     public static void main(String[] args) {
-        int a;
         Scanner sc = new Scanner(System.in);
-        a=sc.nextInt();
-        if(a==3){
-            throw new NegativeArraySizeException();
-        }
-        else{
-            System.out.println("Alright");
-        }
+        String original = sc.nextLine();
+        StringBuilder reversed = new StringBuilder(original).reverse();
+        System.out.println("reversed string is "+reversed.toString());
     }
 }
