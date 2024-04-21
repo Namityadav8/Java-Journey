@@ -1,39 +1,37 @@
 import java.io.*;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.file.FileAlreadyExistsException;
 import java.util.*;
 public class File1 {
     public static void main(String[] args) {
-        // code wo create a new file 
-        File f1 = new File("C:\\Academics\\Java-Journey\\namit.txt");
-        f1.exists();  // to check if a file is existing or not 
+        File f1 = new File("practise.txt");
         try{
             f1.createNewFile();
-        }catch(IOException e){
+        }catch(Exception e){
             System.out.println(e);
         }
-        /// code to write in a file \
+
         try{
-        FileWriter fq = new FileWriter(f1);
-        fq.write("hi this is namit yadav");
-        fq.close();
-        }catch(Exception e ){
+            FileWriter fw = new FileWriter(f1);
+            fw.write("Hello i am revising things in this ");
+            fw.close();
+            System.out.println("Content has been written in the file ");
+        }catch(Exception e){
             System.out.println(e);
         }
 
+        System.out.println("Now if you want to read what has been written in your file ");
 
-        //reading a file 
-        try {
+        try{
             Scanner sc = new Scanner(f1);
             while(sc.hasNextLine()){
                 String line = sc.nextLine();
                 System.out.println(line);
             }
-
-        } catch (Exception e) {
+        }catch(Exception e){
             System.out.println(e);
         }
+
+        
+
+
     }
 }
