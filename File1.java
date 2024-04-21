@@ -26,12 +26,31 @@ public class File1 {
                 String line = sc.nextLine();
                 System.out.println(line);
             }
+            sc.close();
         }catch(Exception e){
             System.out.println(e);
         }
-
         
+        // deleting a file in java
 
+        f1.delete();
 
+        try{
+            File obj=new File("nlp.txt");
+            Scanner sc=new Scanner(obj);
+            String larger="";
+            String current;
+            while (sc.hasNext()) {
+            current=sc.next();
+            if (current.length()>larger.length()){
+            larger=current;
+            }
+            }
+            System.out.println(larger);
+            
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }
     }
 }

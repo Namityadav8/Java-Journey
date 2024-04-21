@@ -1,7 +1,17 @@
-
-        File f0 = new File("input.txt");
-        if(f0.delete()){
-            System.out.println(f0.getName()+"file is deleted successfully");
-        }else{
-            System.out.println("unexpected error found in deletion of the file .");
-        }
+try{
+            File obj=new File("nlp.txt");
+            Scanner sc=new Scanner(obj);
+            String larger="";
+            String current;
+            while (sc.hasNext()) {
+            current=sc.next();
+            if (current.length()>larger.length()){
+            larger=current;
+            }
+            }
+            System.out.println(larger);
+            
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }

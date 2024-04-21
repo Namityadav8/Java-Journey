@@ -8,3 +8,6 @@ public class practise3 {
         System.out.println("reversed string is "+reversed.toString());
     }
 }
+
+
+
