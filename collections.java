@@ -15,5 +15,6 @@ public class collections {
         System.out.println(a);
         System.out.println(a.get(3));
         
+        
     }
 }
