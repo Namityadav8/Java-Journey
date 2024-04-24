@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class collections {
     public static void main(String[] args) {
+        // This is for arraylist functions done 
         ArrayList<Integer> a = new ArrayList<>();
         ArrayList<Integer> b = new ArrayList<>();
         a.add(3);
@@ -15,6 +17,9 @@ public class collections {
         System.out.println(a);
         System.out.println(a.get(3));
         
+
+        // now linkedlist 
+        LinkedList<Integer> x  = new LinkedList<>();
         
     }
 }
