@@ -3,6 +3,8 @@ import java.util.*;
 public class CA {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        // same code that ran here but unable to run on the codetantra platform 
         ArrayList<String> a = new ArrayList<>();
         a.add("Java");
         a.add("Python");
@@ -12,7 +14,7 @@ public class CA {
         if(a.contains(str)){
             System.out.println(str);
         }else{
-            System.out.println("It doesn't have it ");
+           throw new ArithmeticException();
         }
 
     }
