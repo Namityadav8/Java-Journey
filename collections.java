@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+
+interface a<T>{
+    public void hi(T a );
+}
+
+
 public class collections {
     public static void main(String[] args) {
         // This is for arraylist functions done 
