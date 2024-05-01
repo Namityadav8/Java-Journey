@@ -10,11 +10,11 @@ public class CA {
         a.add("Python");
         a.add("C++");
         System.out.println("Enter your Language :");
-        String str = sc.nextLine();
+        String str = sc.next();
         if(a.contains(str)){
             System.out.println(str);
         }else{
-           throw new ArithmeticException();
+           throw new ArithmeticException("Error");
         }
 
     }
