@@ -7,8 +7,11 @@ public class hashmap {
         a.put(30, "curry");
         a.put(34, "giannis");
         
-        for(Map.Entry<Integer,String> e : a.entrySet()) {
-            System.out.println("Key: " + e.getKey() + " Value: " + e.getValue());
-        }
-    }
+    //     for(Map.Entry<Integer,String> e : a.entrySet()) {
+    //         System.out.println("Key: " + e.getKey() + " Value: " + e.getValue());
+    //     }
+
+
+        
+     }
 }
