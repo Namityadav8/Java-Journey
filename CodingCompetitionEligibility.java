@@ -7,9 +7,7 @@ public class CodingCompetitionEligibility {
 
 
         String a = "my name is namit";
-        String b = a.replace("namit", "amit");
-        System.out.println(b);
-
+        System.out.println(a.indexOf("namit",5));
 
 
     }
