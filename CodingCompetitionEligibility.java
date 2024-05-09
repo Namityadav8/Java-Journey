@@ -18,7 +18,7 @@ public class CodingCompetitionEligibility {
         System.out.print("Participant Age: ");
         int age = scanner.nextInt();
         scanner.nextLine(); // Consume newline character
-
+        
         // Read participant programming language
         System.out.print("Participant Programming Language: ");
         String programmingLanguage = scanner.nextLine();
