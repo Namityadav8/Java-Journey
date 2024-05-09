@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class InvalidProgrammingLanguageException extends Exception {
-    public InvalidProgrammingLanguageException(String message) {
-        super(message);
-    }
-}
+// class InvalidProgrammingLanguageException extends Exception {
+//     public InvalidProgrammingLanguageException(String message) {
+//         super(message);
+//     }
+// }
 
 public class CodingCompetitionEligibility {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class CodingCompetitionEligibility {
 
             // Check programming language eligibility
             if (!programmingLanguage.equalsIgnoreCase("Java") && !programmingLanguage.equalsIgnoreCase("Python") && !programmingLanguage.equalsIgnoreCase("C++")) {
-                throw new InvalidProgrammingLanguageException("Invalid Programming Language");
+                throw new Exception("Invalid Programming Language");
             }
 
             // Participant is eligible
@@ -41,7 +41,7 @@ public class CodingCompetitionEligibility {
             System.out.println("Eligible to participate");
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
-        } catch (InvalidProgrammingLanguageException e) {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
             System.out.println("Thanks for participating!");
