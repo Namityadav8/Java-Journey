@@ -5,9 +5,16 @@ public class Complete_Revise {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     // we can format anything using string formatting 
-    float x = 3.4552f;
-    String b = String.format("%.2f", x);
+    double a = 3.4534;
+    String b = String.format("%.2f", a);
     System.out.println(b);
+
+
+
+
+
+
+
 
 
   }
