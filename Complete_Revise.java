@@ -8,11 +8,8 @@ public class Complete_Revise {
     // double a = 3.4534;
     // String x = "Namit is here ";
     // System.out.println(x.charAt(4));
-    int a = sc.nextInt();
-   while (a<5) {
-      System.out.println("ohello mf ");
-      a++;
-   }
+    
+    
 
 
 
