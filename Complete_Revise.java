@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Scanner;
 
 
 public class Complete_Revise {
@@ -14,7 +15,7 @@ public class Complete_Revise {
         // }
 
         System.out.println("Now writing inside the file ");
-        
+        // this is how we write inside the file 
         try{    
             FileWriter fw = new FileWriter(f1);
             fw.write("Hello this is been written in the file ");
@@ -24,5 +25,18 @@ public class Complete_Revise {
         }finally{
             System.out.println("Content has been written in the file ");
         }
-    }
-}
+
+
+        try{
+            Scanner sc = new Scanner(f1);
+            while(sc.hasNextLine()){
+                String line = sc.nextLine();
+                System.out.println(line);
+            }}catch(Exception e){
+                System.out.println(e);
+            }
+            finally{
+                System.out.println("Content has been readed.");
+            }
+        
+        } }
