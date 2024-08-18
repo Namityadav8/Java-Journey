@@ -16,11 +16,11 @@ class base1{
 class derived2 extends base1{                                     
     derived2(){     
         // super(13);
-        //this will redirecrt to the overload. const. 
+        //this will redirecrt to the overload. const. as super leads to calling parents class
         System.out.println("inside derived class");
     }
     derived2(int m , int n){
-        // super(23); // only if derived const is also argumented as we can pass derived arguments from main 
+         super(23); // only if derived const is also argumented as we can pass derived arguments from main 
         //func itslef but have to pass base class using super .
         System.out.println("inside derived overloaded const "+ (m+n));
     }
