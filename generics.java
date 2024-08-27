@@ -14,13 +14,15 @@
 
 
 // now implementing interface using generic class
-
+interface m<T>{    //here T is refferd to as our dataype that we will write in the main class 
+        T b(T x);
+}
 
 interface a<t>{
         t fun( t a );
 }
 
-public class generics implements a<Integer>{
+public class generics implements a<Integer>{ // this is the way to inherit the interface into it with a specific datatype
     public Integer fun(Integer a){
         return a;
     }
@@ -35,6 +37,6 @@ public class generics implements a<Integer>{
             // obj3.fun('a',"A");
                 generics obj = new generics();
                 obj.fun(23);
-                
+
         }
 }
