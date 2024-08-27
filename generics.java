@@ -35,5 +35,6 @@ public class generics implements a<Integer>{
             // obj3.fun('a',"A");
                 generics obj = new generics();
                 obj.fun(23);
+                
         }
 }
